@@ -4,7 +4,7 @@
 #
 Name     : R-batchtools
 Version  : 0.9.15
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/batchtools_0.9.15.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/batchtools_0.9.15.tar.gz
 Summary  : Tools for Computation on Batch Systems
@@ -13,6 +13,7 @@ License  : LGPL-3.0
 Requires: R-batchtools-lib = %{version}-%{release}
 Requires: R-R6
 Requires: R-backports
+Requires: R-base64url
 Requires: R-brew
 Requires: R-checkmate
 Requires: R-data.table
@@ -57,10 +58,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633370906
+export SOURCE_DATE_EPOCH=1633644459
 
 %install
-export SOURCE_DATE_EPOCH=1633370906
+export SOURCE_DATE_EPOCH=1633644459
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
