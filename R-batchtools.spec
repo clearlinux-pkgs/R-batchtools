@@ -4,7 +4,7 @@
 #
 Name     : R-batchtools
 Version  : 0.9.16
-Release  : 9
+Release  : 10
 URL      : https://cran.r-project.org/src/contrib/batchtools_0.9.16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/batchtools_0.9.16.tar.gz
 Summary  : Tools for Computation on Batch Systems
@@ -36,9 +36,6 @@ BuildRequires : R-rappdirs
 BuildRequires : R-stringi
 BuildRequires : R-withr
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 this package provides a parallel implementation of the Map function for high
@@ -61,10 +58,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675442150
+export SOURCE_DATE_EPOCH=1678811038
 
 %install
-export SOURCE_DATE_EPOCH=1675442150
+export SOURCE_DATE_EPOCH=1678811038
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
