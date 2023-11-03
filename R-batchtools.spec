@@ -5,7 +5,7 @@
 #
 Name     : R-batchtools
 Version  : 0.9.17
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/batchtools_0.9.17.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/batchtools_0.9.17.tar.gz
 Summary  : Tools for Computation on Batch Systems
